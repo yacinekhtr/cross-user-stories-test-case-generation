@@ -1,0 +1,183 @@
+ID UC-002
+Name IBM Order Validation
+Description 1. As a customer, I want my server order to be validated by IBM to know if it is accepted, rejected, or modified so that I can proceed accordingly.
+
+The user should be able to submit a server order to IBM and receive a response on the order validation status. The possible validation statuses are: 
+                                       OK: The order is accepted as is.
+                                       Not OK: The order is rejected.
+                                       Modified: The order is modified by IBM.
+The user should be able to see the validation details in a summary table with the following information:
+
+                                   Validation status (OK, Not OK, Modified)
+                                   Modification details (if applicable)
+                                   Comments from the IBM team
+
+
+
+For each status, the user should be able to perform the following actions:
+
+                                 OK: The user can confirm the order and proceed with the payment.
+                                 Not OK: The user can see the reasons for the rejection and submit a new order.
+         Modified: The user can see the details of the modifications made by IBM and accept or reject these modifications.
+
+
+
+The user should be able to receive an email notification about the order validation status with a link to access the details.
+
+The user should be able to export the validation details to a csv/xl file.
+ 
+ 
+================================================================================
+
+Extracted text from IBM server order UC-001.docx:
+
+                   
+
+
+ID UC-001
+Name IBM Server Order
+Description 1. As a customer, I want to be able to order a server from IBM with a specific configuration and a detailed price so that it meets my business needs.
+
+The user should be able to configure the server by choosing from the following options:
+ 
+                                  Processor type (Intel, AMD)
+                                 Amount of RAM (16GB, 32GB, 64GB, etc.)
+                                 Storage capacity (1TB, 2TB, SSD, HDD, etc.)
+                                 Operating system (Linux, Windows Server, etc.)
+                                 Network options (Gigabit Ethernet, Fibre Channel, etc.)
+The user should be able to see a summary of the total price based on the selected options.
+Clicking on each option should allow viewing the details and prices of each configuration:
+
+                               Processor – Clicking on this option should display the available processor types with their respective prices.
+
+                       RAM – Clicking on this option should display the different available RAM capacities with their respective prices.
+   Storage – Clicking on this option should display the available storage types and capacities with their respective prices.
+
+
+
+The user should be able to see the details of the chosen configuration in a summary table with the following information:
+
+        Processor type
+       Amount of RAM
+       Storage capacity
+       Operating system
+       Network options
+Total price
+
+
+
+The user should be able to view a bar graph representing the cost of each component (processor, RAM, storage, etc.) and the total cost. Clicking on the graph should display additional details on the cost of each component over a 14-day period. The user should be able to export the configuration and price to a csv/xl file. The user should be able to expand and view the graph in full screen.
+
+ 
+ 
+================================================================================
+
+Extracted text from Recording the Invoice Payment and Accounting UC-005.docx:
+
+
+ID UC-005
+Name Recording the Invoice Payment and Accounting
+Description 1. As a customer, I want my invoice payment to be recorded by IBM and integrated into their accounting system to ensure that my payment has been acknowledged and my accounts are up to date.
+
+The user should be able to make the invoice payment through various means:
+Bank transfer
+Credit card
+Check
+Once the payment is made, IBM should record the payment in their accounting system. The following information should be recorded:
+Invoice number
+Order number
+Amount paid
+Payment date
+Payment method
+Payment reference
+
+The user should be able to see the payment details in a summary table with the following information:
+
+Invoice number
+Order number
+Amount paid
+Payment date
+Payment method
+Payment reference
+The user should receive an email confirmation indicating that the payment has been received and recorded.
+The user should be able to export the payment details to a csv/xl file.
+The user should be able to access a history of all payments made, with the ability to filter by date, amount, or invoice number.
+IBM should integrate the payment information into their accounting system to ensure accurate and up-to-date accounting.
+ 
+ 
+================================================================================
+
+Extracted text from Sending the Advance Shipment Notification (ASN) by IBM UC-003.docx:
+
+
+ID UC-003
+Name Sending the Advance Shipment Notification (ASN) by IBM
+Description 1. As a customer, I want to receive an Advance Shipment Notification (ASN) from the IBM warehouse to know when my server order will be shipped and be prepared to receive it.
+
+The user should be able to receive an Advance Shipment Notification (ASN) from the IBM warehouse through various means:                                                                                                        
+
+Email
+B2B (Business-to-Business) integration
+.
+The ASN should include the following information:
+Order number
+Expected shipment date
+Carrier information (name, tracking number)
+Order contents details (quantity, item description)
+Delivery address
+
+
+
+The user should be able to see the ASN details in a summary table with the following information:
+
+Order number
+Expected shipment date
+Carrier
+Tracking number
+Order contents
+Delivery Adress
+
+The user should be able to click on the tracking number to track the shipment in real-time on the carrier's website.
+The user should be able to export the ASN details to a csv/xl file.
+The user should be able to receive a notification via email or through the integrated B2B system, indicating that an ASN has been sent.
+ 
+ 
+================================================================================
+
+Extracted text from Sending the Invoice by IBM UC-004.docx:
+
+
+ID UC-004
+Name Sending the Invoice by IBM
+Description 1. As a customer, I want to receive an invoice from IBM after placing a server order so that I can make the payment and keep a record of the transaction.
+
+The user should be able to receive an invoice from IBM through various means: 
+
+Email
+Integrated B2B (Business-to-Business) system.
+The invoice should include the following information:
+Invoice number
+Order number
+Billing date
+Details of ordered items (quantity, description, unit price)
+Total amount due
+Payment details (terms, banking information)
+Billing address
+
+
+The user should be able to see the invoice details in a summary table with the following information:
+Invoice number
+Order number
+Billing date
+Ordered items (quantity, description, unit price)
+Total amount
+Payment terms
+Banking information
+Billing address
+The user should be able to click on a link to access a downloadable PDF version of the invoice.
+The user should be able to export the invoice details to a csv/xl file.
+The user should be able to receive a notification via email or through the integrated B2B system, indicating that an invoice has been sent.
+ 
+ 
+================================================================================
+

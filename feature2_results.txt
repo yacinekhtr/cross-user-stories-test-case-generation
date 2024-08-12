@@ -1,0 +1,90 @@
+Topic 0: 0.048*"payment" + 0.048*"user" + 0.046*"order" + 0.038*"able" + 0.032*"ibm" + 0.027*"detail" + 0.027*"number" + 0.022*"receive" + 0.019*"information" + 0.019*"date"
+Topic 1: 0.063*"invoice" + 0.032*"user" + 0.032*"able" + 0.032*"order" + 0.026*"detail" + 0.026*"information" + 0.026*"number" + 0.026*"billing" + 0.020*"payment" + 0.020*"ibm"
+Topic 2: 0.039*"price" + 0.039*"option" + 0.035*"able" + 0.030*"user" + 0.025*"storage" + 0.025*"processor" + 0.025*"ram" + 0.020*"server" + 0.020*"capacity" + 0.020*"display"
+
+User Story: 
+ID UC-002
+Name IBM Order Validation
+Description 1. As a customer, I want my server order to be vali...
+Assigned Common Topic: 2
+Cluster: 0
+
+User Story: 
+                   
+
+ID UC-001
+Name IBM Server Order
+Description 1. As a customer, I want to be abl...
+Assigned Common Topic: 2
+Cluster: 0
+
+User Story: 
+ID UC-005
+Name Recording the Invoice Payment and Accounting
+Description 1. As a customer, I want my...
+Assigned Common Topic: 2
+Cluster: 0
+
+User Story: 
+ID UC-003
+Name Sending the Advance Shipment Notification (ASN) by IBM
+Description 1. As a customer,...
+Assigned Common Topic: 2
+Cluster: 0
+
+User Story: 
+ID UC-004
+Name Sending the Invoice by IBM
+Description 1. As a customer, I want to receive an invoic...
+Assigned Common Topic: 2
+Cluster: 0
+Coherence of the LDA model: 0.5906
+
+User Story: 
+ID UC-002
+Name IBM Order Validation
+Description 1. As a customer, I want my server order to be vali...
+Topics: [(0, 0.9935367)]
+Highest Topic: (0, 0.9935367)
+
+User Story: 
+                   
+
+ID UC-001
+Name IBM Server Order
+Description 1. As a customer, I want to be abl...
+Topics: [(2, 0.9954295)]
+Highest Topic: (2, 0.9954295)
+
+User Story: 
+ID UC-005
+Name Recording the Invoice Payment and Accounting
+Description 1. As a customer, I want my...
+Topics: [(0, 0.9931041)]
+Highest Topic: (0, 0.9931041)
+
+User Story: 
+ID UC-003
+Name Sending the Advance Shipment Notification (ASN) by IBM
+Description 1. As a customer,...
+Topics: [(0, 0.99344283)]
+Highest Topic: (0, 0.99344283)
+
+User Story: 
+ID UC-004
+Name Sending the Invoice by IBM
+Description 1. As a customer, I want to receive an invoic...
+Topics: [(1, 0.99308944)]
+Highest Topic: (1, 0.99308944)
+
+Error:
+C:\Users\YacineKHITER\cross-user-stories-test-case-generation\myenv\Lib\site-packages\threadpoolctl.py:1214: RuntimeWarning: 
+Found Intel OpenMP ('libiomp') and LLVM OpenMP ('libomp') loaded at
+the same time. Both libraries are known to be incompatible and this
+can cause random crashes or deadlocks on Linux when loaded in the
+same Python program.
+Using threadpoolctl may cause crashes or deadlocks. For more
+information and possible workarounds, please see
+    https://github.com/joblib/threadpoolctl/blob/master/multiple_openmp.md
+
+  warnings.warn(msg, RuntimeWarning)
