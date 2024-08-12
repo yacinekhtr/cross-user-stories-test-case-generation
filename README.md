@@ -100,6 +100,8 @@ Copy code
 
 The diagram below illustrates the end-to-end workflow for generating test cases based on user stories provided by the user through the AAQE platform. The process is automated through the execution of several Python scripts, which analyze and cluster the user stories and then generate a set of outputs, including test cases.
 
+![Workflow Diagram](./workflow_diagram.jpg)
+
 #### **Workflow Steps:**
 
 1. **Input User Stories**: The user inputs one or multiple user stories into the AAQE platform.
@@ -127,4 +129,3 @@ The diagram below illustrates the end-to-end workflow for generating test cases 
      - `cluster_X_differences.txt`: Contains the comparison of the user stories within the same cluster.
      - A text file with the generated end-to-end test cases.
 
-![Workflow Diagram](C:/Users/YacineKHITER/cross-user-stories-test-case-generation/Workflow%20end-to-end%20test%20cases_page-0001.jpg)
