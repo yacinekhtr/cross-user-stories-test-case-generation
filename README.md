@@ -96,43 +96,35 @@ Copy code
 - If you need to add any additional dependencies, be sure to include them in the `requirements.txt` file.
 - Ensure that the paths and filenames in your code match what you actually have in your project.
 
+### Workflow Overview
 
-## Workflow Overview
 The diagram below illustrates the end-to-end workflow for generating test cases based on user stories provided by the user through the AAQE platform. The process is automated through the execution of several Python scripts, which analyze and cluster the user stories and then generate a set of outputs, including test cases.
 
-![Workflow Diagram](C:\\Users\YacineKHITER\\cross-user-stories-test-case-generation\\Workflow end-to-end test cases_page-0001.jpg)
+#### **Workflow Steps:**
 
+1. **Input User Stories**: The user inputs one or multiple user stories into the AAQE platform.
 
-### Workflow Steps:
+2. **Execution of `driver.py`**: 
+   - This script automates the execution of the feature scripts and queries the Large Language Model (LLM) to generate insights and test cases.
 
-Input User Stories:  The user inputs one or multiple user stories into the AAQE platform.
+3. **Execution of `feature1_differences.py`**:
+   - This script extracts and compares the user stories, identifying differences between them.
+   - **Output**: It generates a `feature1_difference.txt` file containing the content of the user stories along with the identified differences.
 
-Execution of driver.py:
+4. **Execution of `feature2_topics.py`**:
+   - This script identifies the topics of the user stories and groups them into clusters using the LDA (Latent Dirichlet Allocation) algorithm.
+   - **Output**: It generates a `feature2_topics.txt` file containing the topics assigned to each user story and the cluster to which they belong.
 
-This script automates the execution of the feature scripts and queries the Large Language Model (LLM) to generate insights and test cases.
+5. **Query Execution to LLM**:
+   - The system queries the LLM (such as LLaMA, GPT, etc.) using the IBM Cloud platform, particularly leveraging WatsonX instances on the TechZone.
+   - **Output**: This step results in the generation of a text file containing end-to-end test cases.
 
-Execution of feature1_differences.py:
+6. **Final Output**:
+   - The final outputs include:
+     - `feature1_difference.txt`: Details of the user stories and their differences.
+     - `feature2_topics.txt`: Clustered user stories with assigned topics.
+     - `cluster_X_stories.txt`: Contains the content of the user stories within the same cluster.
+     - `cluster_X_differences.txt`: Contains the comparison of the user stories within the same cluster.
+     - A text file with the generated end-to-end test cases.
 
-This script extracts and compares the user stories, identifying differences between them.
-Output: It generates a feature1_difference.txt file containing the content of the user stories along with the identified differences.
-
-Execution of feature2_topics.py:
-
-This script identifies the topics of the user stories and groups them into clusters using the LDA (Latent Dirichlet Allocation) algorithm.
-
-Output: It generates a feature2_topics.txt file containing the topics assigned to each user story and the cluster to which they belong.
-
-Query Execution to LLM:
-
-The system queries the LLM (such as LLaMA, GPT, etc.) using the IBM Cloud platform, particularly leveraging WatsonX instances on the TechZone.
-
-Output: This step results in the generation of a text file containing end-to-end test cases.
-
-Final Output:
-
-The final outputs include:
-feature1_difference.txt: Details of the user stories and their differences.
-feature2_topics.txt: Clustered user stories with assigned topics.
-cluster_X_stories.txt: Contains the content of the user stories within the same cluster.
-cluster_X_differences.txt: Contains the comparison of the user stories within the same cluster.
-A text file with the generated end-to-end test cases.
+![Workflow Diagram](C:/Users/YacineKHITER/cross-user-stories-test-case-generation/Workflow%20end-to-end%20test%20cases_page-0001.jpg)
